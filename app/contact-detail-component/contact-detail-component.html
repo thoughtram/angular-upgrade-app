@@ -22,7 +22,7 @@
           <span class="col s6"><i class="material-icons prefix">public</i> Website:</span>
           <span class="col s6">{{contact?.website || '-'}}</span>
         </div>
-        <zippy-component title="{{zippyCaption}}" toggle="toggleCaption(closed)">
+        <zippy-component [title]="zippyCaption" (toggle)="toggleCaption($event.closed)">
           <fieldset>
             <legend><i class="material-icons prefix">location_city</i> Address</legend>
             <div class="row">
