@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="contacts-app">
+
+<head>
+  <title>Angular Migration App by thoughtram</title>
+
+  <base href="/">
+
+  <title>Angular Migration QuickStart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/materialize-css/bin/materialize.css">
+  <link rel="stylesheet" href="app/contacts-app.css">
+
+  <!-- 1. Load libraries -->
+  <!-- IE required polyfills, in this exact order -->
+  <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+
+  <script src="app/contacts-service/contacts-service.es5.js"></script>
+  <script src="app/clone-service/clone-service.es5.js"></script>
+  <script src="app/zippy-component/zippy-component.es5.js"></script>
+  <script src="app/contact-header-component/contact-header-component.es5.js"></script>
+  <script src="app/contacts-list-component/contacts-list-component.es5.js"></script>
+  <script src="app/contact-detail-component/contact-detail-component.es5.js"></script>
+  <script src="app/contact-editor-component/contact-editor-component.es5.js"></script>
+  <script src="app/contacts-app.es5.js"></script>
+</head>
+
+<body>
+  <contacts-app></contacts-app>
+</body>
+
+</html>

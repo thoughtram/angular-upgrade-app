@@ -1,0 +1,75 @@
+<div class="row">
+  <form class="col s12 m7">
+    <div class="card">
+      <div class="card-image">
+        <img ng-src="{{$ctrl.contact.image}}">
+        <span class="card-title">{{$ctrl.contact.name}}</span>
+      </div>
+      <div class="card-content grey-text text-darken-4">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i><input ng-model="$ctrl.contact.name" id="name" type="text" class="validate">
+            <label class="active" for="name">name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i><input id="email" ng-model="$ctrl.contact.email" type="text" class="validate">
+            <label class="active" for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">phone</i><input id="phone" ng-model="$ctrl.contact.phone" type="text" class="validate">
+            <label class="active" for="phone">Phone</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">cake</i><input id="birthday" ng-model="$ctrl.contact.birthday" type="date" class="validate">
+            <label class="active" for="phone">Birthday</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">public</i><input id="website" ng-model="$ctrl.contact.website" type="text" class="validate">
+            <label class="active" for="phone">Website</label>
+          </div>
+        </div>
+        <fieldset>
+          <legend><i class="material-icons prefix">location_city</i> Address</legend>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="street" type="text" ng-model="$ctrl.contact.address.street" class="validate">
+              <label class="active" for="street">Street</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="zip" type="text" ng-model="$ctrl.contact.address.zip" class="validate">
+              <label class="active" for="zip">Zipcode</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="city" type="text" ng-model="$ctrl.contact.address.city" class="validate">
+              <label class="active" for="city">City</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="country" type="text" ng-model="$ctrl.contact.address.country" class="validate">
+              <label class="active" for="country">Country</label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="card-action">
+        <button type="button" class="btn" ng-click="$ctrl.cancel($ctrl.contact)">Cancel</button>
+        <button type="button" class="btn" ng-click="$ctrl.save($ctrl.contact)">Save</button>
+      </div>
+    </div>
+  </form>
+</div>

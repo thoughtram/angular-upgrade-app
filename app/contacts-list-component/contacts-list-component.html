@@ -1,0 +1,8 @@
+<ul class="collection">
+  <li class="collection-item avatar" ng-repeat="contact in $ctrl.contacts">
+    <a ng-href="#/contact/{{contact.id}}">
+      <img ng-src="{{contact.image}}" alt="" class="circle">
+      <span class="title">{{contact.name}}</span>
+    </a>
+  </li>
+</ul>

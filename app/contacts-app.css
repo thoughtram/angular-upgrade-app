@@ -1,0 +1,61 @@
+.collection,
+.card {
+  margin-top: 0;
+}
+
+/deep/ .collection .collection-item.avatar .circle {
+  top: 1.5em;
+}
+/deep/ .collection .collection-item .title {
+  margin-top: 1.5em;
+  display: inline-block;
+}
+
+.flex-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader-wrapper {
+  margin-top: 20em;
+}
+
+/deep/ .col.s6 .material-icons {
+  vertical-align: -25%;
+}
+
+/deep/ fieldset legend {
+  font-size: 20px;
+  color: #666;
+  background: #fff;
+  padding: 0.5em;
+}
+
+/deep/ fieldset legend .material-icons {
+  vertical-align: -12%;
+}
+
+/deep/ select {
+  display: block;
+}
+
+/deep/ .input-field .input-select-label {
+  position: static;
+}
+
+/deep/ .card .card-content .error-msg {
+  color: #F44336;
+  margin-left: 3em;
+}
+
+/deep/ .collection .collection-item.avatar .circle {
+  background: #ccc;
+}

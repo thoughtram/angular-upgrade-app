@@ -1,0 +1,9 @@
+<div class="zippy">
+  <div class="zippy__title-bar" ng-click="$ctrl.onToggle()">
+    <span class="zippy__icon">
+        {{ !$ctrl.closed ? '&blacktriangledown;' : '&blacktriangleright;' }}
+    </span>
+    <span class="zippy__title">{{ $ctrl.title }}</span>
+  </div>
+  <div class="zippy__content" ng-hide="$ctrl.closed" ng-transclude></div>
+</div>
