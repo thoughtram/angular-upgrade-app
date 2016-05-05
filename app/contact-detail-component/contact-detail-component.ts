@@ -1,11 +1,11 @@
 import {Component, Input, Inject} from '@angular/core';
 import {Contact} from '../models/contact';
+import {ContactsService} from '../contacts-service/contacts-service';
 import {upgradeAdapter} from '../upgrade-adapter';
 
 const ZippyComponent = upgradeAdapter.upgradeNg1Component('zippyComponent');
 
 upgradeAdapter.upgradeNg1Provider('$routeParams');
-upgradeAdapter.upgradeNg1Provider('contactsService');
 
 @Component({
   selector: 'contact-detail-component',
@@ -17,7 +17,7 @@ export class ContactDetailComponent {
   zippyCaption: string;
 
   constructor (@Inject('$routeParams') $routeParams: any,
-               @Inject('contactsService') contactsService: any) {
+               contactsService: ContactsService) {
     this.contact = contactsService.getContact($routeParams.id);
     this.toggleCaption(false);
   }
